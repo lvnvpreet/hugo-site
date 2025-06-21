@@ -10,7 +10,17 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
+    <loc>http://localhost:1313/services/cosmetic-dentistry/</loc>
+  </url><url>
     <loc>http://localhost:1313/blog/</loc>
+  </url><url>
+    <loc>http://localhost:1313/services/emergency/</loc>
+  </url><url>
+    <loc>http://localhost:1313/services/general-dentistry/</loc>
+  </url><url>
+    <loc>http://localhost:1313/services/orthodontics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/services/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>

@@ -1,46 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact HealthCare Plus | StarDentic - Your Dental Care Partner</title>
-<meta name="description" content="Get in touch with our healthcare team. We&#39;re here to help with all your medical needs.">
+<title>Contact StarDentic | StarDentic - Your Dental Care Partner</title>
+<meta name="description" content="Get in touch with our dental team. We&#39;re here to help with all your oral health needs.">
 
 
-<meta property="og:title" content="Contact HealthCare Plus">
-<meta property="og:description" content="Get in touch with our healthcare team. We&#39;re here to help with all your medical needs.">
-<meta property="og:type" content="website">
+
+<meta name="keywords" content="dental care,dentist,oral health,teeth cleaning,dental clinic">
+
+
+<meta name="author" content="StarDentic Team">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="http://localhost:1313/contact/">
+
+
+<meta property="og:title" content="Contact StarDentic | StarDentic - Your Dental Care Partner">
+<meta property="og:description" content="Get in touch with our dental team. We&#39;re here to help with all your oral health needs.">
+<meta property="og:type" content="article">
 <meta property="og:url" content="http://localhost:1313/contact/">
+<meta property="og:site_name" content="StarDentic - Your Dental Care Partner">
+
+<meta property="og:image" content="http://localhost:1313/images/logo.png">
+
+
+
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact StarDentic">
+<meta name="twitter:description" content="Get in touch with our dental team. We&#39;re here to help with all your oral health needs.">
+
 
 
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
 
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+
+
+<style>
+ 
+body { 
+    font-family: 'Inter', sans-serif; 
+    margin: 0; 
+    line-height: 1.6;
+    color: #333;
+}
+.main-header { 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    background: white; 
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1); 
+}
+.hero-section { 
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+}
+.container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+</style>
+
+
 <link rel="stylesheet" href="/css/style.css">
 
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <header class="main-header">
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com"></head>
+<body><header class="main-header">
     
     <div class="top-header-bar">
         <div class="container">
             <div class="top-header-content">
                 <div class="top-left">
-                    <a href="/contact#directions">How to Find Us</a>
+                    <a href="/contact#directions" aria-label="How to Find Us">How to Find Us</a>
                     <span class="separator">|</span>
-                    <a href="/contact#feedback">Give Us Feedback</a>
+                    <a href="/contact#feedback" aria-label="Give Us Feedback">Give Us Feedback</a>
                 </div>
                 <div class="top-center">
-                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
                     <strong>Emergency: &#43;1-234-567-8911</strong>
                 </div>
                 <div class="top-right">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:info@stardentic.com">info@stardentic.com</a>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:info@stardentic.com" aria-label="Email us">info@stardentic.com</a>
                 </div>
             </div>
         </div>
@@ -51,14 +115,14 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="http://localhost:1313/">
+                    <a href="http://localhost:1313/" aria-label="StarDentic Home">
                         
-                            <img src="/images/logo.png" alt="StarDentic - Your Dental Care Partner">
+                            <img src="/images/logo.png" alt="StarDentic - Your Dental Care Partner" width="180" height="50">
                         
                     </a>
                 </div>
                 
-                <nav class="main-navigation">
+                <nav class="main-navigation" role="navigation" aria-label="Main navigation">
                     <ul class="nav-menu">
     <li><a href="http://localhost:1313/" >Home</a></li>
     <li><a href="/about" >About</a></li>
@@ -84,17 +148,18 @@
                 </nav>
                 
                 <div class="header-search">
-                    <form class="search-form" action="/search" method="GET">
-                        <input type="search" placeholder="Search..." name="q">
-                        <button type="submit"><i class="fas fa-search"></i></button>
+                    <form class="search-form" action="/search" method="GET" role="search">
+                        <label for="search-input" class="sr-only">Search</label>
+                        <input type="search" id="search-input" placeholder="Search..." name="q" aria-label="Search">
+                        <button type="submit" aria-label="Submit search"><i class="fas fa-search" aria-hidden="true"></i></button>
                     </form>
                 </div>
                 
-                <div class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </div>
     </div>
@@ -104,29 +169,26 @@
         <div class="container">
             <div class="contact-header-content">
                 <div class="contact-left">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-phone" aria-hidden="true"></i>
                     <span>Call Us <a href="tel:&#43;1-234-567-8900">&#43;1-234-567-8900</a></span>
                 </div>
                 <div class="contact-center">
-                    <i class="fas fa-clock"></i>
+                    <i class="fas fa-clock" aria-hidden="true"></i>
                     <span>Mon-Fri: 8:00AM - 6:00PM, Sat: 9:00AM - 2:00PM, Sun: Closed</span>
                 </div>
                 <div class="contact-right">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <span>123 Dental Street, Medical District, NY 10001</span>
                 </div>
             </div>
         </div>
     </div>
-</header>
-    
-    <main>
-        
+</header><main>
 <div class="page-header">
     <div class="container">
-        <h1>Contact HealthCare Plus</h1>
+        <h1>Contact StarDentic</h1>
         
-        <p class="page-description">Get in touch with our healthcare team. We&#39;re here to help with all your medical needs.</p>
+        <p class="page-description">Get in touch with our dental team. We&#39;re here to help with all your oral health needs.</p>
         
     </div>
 </div>
@@ -135,7 +197,7 @@
     <div class="container">
         <div class="content-wrapper">
             <h1 id="contact-us">Contact Us</h1>
-<p>We&rsquo;re here to answer your questions and help you schedule an appointment. Our friendly staff is ready to assist you with any healthcare needs.</p>
+<p>We&rsquo;re here to answer your questions and help you schedule your dental appointment. Our friendly staff is ready to assist you with any dental care needs.</p>
 <h2 id="office-hours">Office Hours</h2>
 <ul>
 <li><strong>Monday - Friday</strong>: 8:00 AM - 6:00 PM</li>
@@ -147,14 +209,14 @@
 <p>When you contact us, our staff will help you:</p>
 <ul>
 <li>Schedule appointments at convenient times</li>
-<li>Verify your insurance coverage</li>
-<li>Answer questions about our services</li>
+<li>Verify your dental insurance coverage</li>
+<li>Answer questions about our dental services</li>
 <li>Provide directions to our office</li>
-<li>Connect you with the right healthcare provider</li>
+<li>Connect you with the right dental provider</li>
 </ul>
 <h2 id="emergency-contact">Emergency Contact</h2>
+<p>For dental emergencies, please call our emergency line: <strong>+1-234-567-8911</strong></p>
 <p>For life-threatening emergencies, please call <strong>911</strong> immediately.</p>
-<p>For urgent medical needs outside office hours, call our emergency line: <strong>+1-234-567-8911</strong></p>
 
             
             
@@ -162,9 +224,7 @@
     </div>
 </div>
 
-    </main>
-    
-    <footer class="main-footer">
+    </main><footer class="main-footer">
     <div class="container">
         <div class="footer-content">
             
@@ -256,8 +316,6 @@
         </div>
     </div>
 </footer>
-    
-    
     <script src="/js/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 ---
-title: "HealthCare Plus - Your Wellness Partner"
-description: "Professional healthcare services with compassionate care and cutting-edge technology."
+title: "StarDentic - Your Dental Care Partner"
+description: "Professional dental care services with compassionate treatment and cutting-edge technology."
 ---
 
-Welcome to HealthCare Plus, where your health and wellness are our top priorities. We provide comprehensive medical care with a personal touch.
+Welcome to StarDentic, where your smile and oral health are our top priorities. We provide comprehensive dental care with a personal touch.
+

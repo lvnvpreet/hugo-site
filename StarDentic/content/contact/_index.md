@@ -1,11 +1,11 @@
 ---
-title: "Contact HealthCare Plus"
-description: "Get in touch with our healthcare team. We're here to help with all your medical needs."
+title: "Contact StarDentic"
+description: "Get in touch with our dental team. We're here to help with all your oral health needs."
 ---
 
 # Contact Us
 
-We're here to answer your questions and help you schedule an appointment. Our friendly staff is ready to assist you with any healthcare needs.
+We're here to answer your questions and help you schedule your dental appointment. Our friendly staff is ready to assist you with any dental care needs.
 
 ## Office Hours
 
@@ -18,13 +18,13 @@ We're here to answer your questions and help you schedule an appointment. Our fr
 
 When you contact us, our staff will help you:
 - Schedule appointments at convenient times
-- Verify your insurance coverage
-- Answer questions about our services
+- Verify your dental insurance coverage
+- Answer questions about our dental services
 - Provide directions to our office
-- Connect you with the right healthcare provider
+- Connect you with the right dental provider
 
 ## Emergency Contact
 
-For life-threatening emergencies, please call **911** immediately.
+For dental emergencies, please call our emergency line: **+1-234-567-8911**
 
-For urgent medical needs outside office hours, call our emergency line: **+1-234-567-8911**
+For life-threatening emergencies, please call **911** immediately.
