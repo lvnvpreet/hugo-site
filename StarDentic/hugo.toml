@@ -1,0 +1,438 @@
+baseURL = "https://yourwebsite.com"
+languageCode = "en-us"
+title = "StarDentic - Your Dental Care Partner"
+theme = "health-wellness-theme"
+
+# Content settings
+[pagination]
+  pagerSize = 9
+enableGitInfo = false
+enableRobotsTXT = true
+
+# Markup settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+# Site parameters
+[params]
+  description = "Professional dental care services with compassionate treatment and cutting-edge technology. Your trusted partner in oral health and dental wellness."
+  
+  # Contact Information
+  email = "info@stardentic.com"
+  phone = "+1-234-567-8900"
+  emergency_phone = "+1-234-567-8911"
+  address = "123 Dental Street, Medical District, NY 10001"
+  hours = "Mon-Fri: 8:00AM - 6:00PM, Sat: 9:00AM - 2:00PM, Sun: Closed"
+  
+  # Branding
+  logo = "/images/logo.png"
+  favicon = "/images/favicon.ico"
+  
+  # SEO
+  keywords = ["dental care", "dentist", "oral health", "teeth cleaning", "dental clinic"]
+  author = "StarDentic Team"
+  
+  # Hero Section
+  [params.hero]
+    title = "Your Smile is Our Priority"
+    description = "Professional dental care services with compassionate treatment and cutting-edge technology. Experience personalized dental care designed for your unique needs."
+    cta = "Book Appointment"
+    background_image = "/images/hero-bg.jpg"
+    show_video = false
+    video_url = ""
+
+  # About Section
+  [params.about]
+    title = "Excellence in Dental Care Since 2008"
+    description = "With over 15 years of experience, we provide exceptional dental services with a personal touch. Our state-of-the-art facility and experienced team ensure that you receive the best possible oral healthcare."
+    features = [
+      "Board-Certified Dentists",
+      "State-of-the-art Equipment",
+      "Personalized Treatment Plans",
+      "Emergency Dental Services",
+      "Insurance Accepted",
+      "Multilingual Staff"
+    ]
+  
+  about_image = "/images/about-us.jpg"
+
+  # Social Media
+  [params.social]
+    facebook = "https://facebook.com/stardentic"
+    twitter = "https://twitter.com/stardentic"
+    instagram = "https://instagram.com/stardentic"
+    linkedin = "https://linkedin.com/company/stardentic"
+    youtube = "https://youtube.com/stardentic"
+
+  # Services for Navigation Dropdown
+  [[params.service_menu]]
+    name = "General Dentistry"
+    url = "/services/general-dentistry"
+  
+  [[params.service_menu]]
+    name = "Cosmetic Dentistry"
+    url = "/services/cosmetic-dentistry"
+  
+  [[params.service_menu]]
+    name = "Orthodontics"
+    url = "/services/orthodontics"
+  
+  [[params.service_menu]]
+    name = "Oral Surgery"
+    url = "/services/oral-surgery"
+
+  # Home Page Services
+  [[params.home_services]]
+    title = "General Dentistry"
+    description = "Comprehensive dental care including cleanings, fillings, and preventive treatments for optimal oral health."
+    icon = "fas fa-tooth"
+    url = "/services/general-dentistry"
+
+  [[params.home_services]]
+    title = "Cosmetic Dentistry"
+    description = "Transform your smile with teeth whitening, veneers, and other cosmetic dental procedures."
+    icon = "fas fa-smile"
+    url = "/services/cosmetic-dentistry"
+
+  [[params.home_services]]
+    title = "Emergency Dental Care"
+    description = "24/7 emergency dental services for urgent dental problems and pain relief."
+    icon = "fas fa-ambulance"
+    url = "/services/emergency"
+
+  [[params.home_services]]
+    title = "Orthodontics"
+    description = "Straighten your teeth with traditional braces or modern clear aligners for a perfect smile."
+    icon = "fas fa-align-center"
+    url = "/services/orthodontics"
+
+  # Complete Services List
+  [[params.all_services]]
+    title = "General Dentistry"
+    description = "Comprehensive dental care including routine cleanings, fillings, crowns, and preventive treatments for all ages."
+    icon = "fas fa-tooth"
+    url = "/services/general-dentistry"
+    image = "/images/services/general-dentistry.jpg"
+    duration = "60 minutes"
+    price = "$120"
+    features = [
+      "Dental Cleaning and Polishing",
+      "Oral Examination",
+      "X-rays and Diagnosis",
+      "Cavity Treatment",
+      "Preventive Care Planning"
+    ]
+
+  [[params.all_services]]
+    title = "Cosmetic Dentistry"
+    description = "Enhance your smile with professional teeth whitening, veneers, bonding, and other aesthetic dental procedures."
+    icon = "fas fa-smile"
+    url = "/services/cosmetic-dentistry"
+    image = "/images/services/cosmetic-dentistry.jpg"
+    duration = "90 minutes"
+    price = "$300"
+    features = [
+      "Teeth Whitening",
+      "Porcelain Veneers",
+      "Dental Bonding",
+      "Smile Makeover",
+      "Gum Contouring"
+    ]
+
+  [[params.all_services]]
+    title = "Orthodontics"
+    description = "Straighten your teeth and correct bite issues with traditional braces, clear aligners, and other orthodontic treatments."
+    icon = "fas fa-align-center"
+    url = "/services/orthodontics"
+    image = "/images/services/orthodontics.jpg"
+    duration = "45 minutes"
+    price = "$200"
+    features = [
+      "Traditional Metal Braces",
+      "Clear Ceramic Braces",
+      "Invisalign Clear Aligners",
+      "Retainers",
+      "Bite Correction"
+    ]
+
+  # Service Categories
+  [[params.service_categories]]
+    name = "Preventive Care"
+    description = "Essential dental services for maintaining oral health"
+    icon = "fas fa-shield-alt"
+    services = [
+      "Regular Cleanings",
+      "Fluoride Treatments",
+      "Dental Sealants",
+      "Oral Cancer Screenings"
+    ]
+    url = "/services/preventive-care"
+
+  [[params.service_categories]]
+    name = "Restorative Care"
+    description = "Treatments to restore damaged or missing teeth"
+    icon = "fas fa-tools"
+    services = [
+      "Fillings and Crowns",
+      "Dental Implants",
+      "Bridges and Dentures",
+      "Root Canal Therapy"
+    ]
+    url = "/services/restorative-care"
+
+  # Team Members
+  [[params.team]]
+    name = "Dr. Sarah Johnson"
+    designation = "Chief Dentist & Practice Owner"
+    bio = "Board-certified dentist with 20+ years of experience in comprehensive dental care and cosmetic dentistry."
+    image = "/images/team/dr-sarah-johnson.jpg"
+    qualifications = [
+      "DDS, Harvard School of Dental Medicine",
+      "Board Certified General Dentist",
+      "Member, American Dental Association"
+    ]
+    [params.team.social]
+      linkedin = "https://linkedin.com/in/dr-sarah-johnson"
+      email = "dr.johnson@stardentic.com"
+
+  [[params.team]]
+    name = "Dr. Michael Chen"
+    designation = "Orthodontist"
+    bio = "Specialized in orthodontics with expertise in traditional braces and modern clear aligner treatments."
+    image = "/images/team/dr-michael-chen.jpg"
+    qualifications = [
+      "DDS, UCLA School of Dentistry",
+      "MS in Orthodontics",
+      "Board Certified Orthodontist"
+    ]
+    [params.team.social]
+      linkedin = "https://linkedin.com/in/dr-michael-chen"
+      email = "dr.chen@stardentic.com"
+
+  [[params.team]]
+    name = "Dr. Emily Rodriguez"
+    designation = "Pediatric Dentist"
+    bio = "Dedicated to providing gentle and compassionate dental care for children and adolescents."
+    image = "/images/team/dr-emily-rodriguez.jpg"
+    qualifications = [
+      "DDS, Columbia College of Dental Medicine",
+      "Pediatric Dentistry Residency",
+      "Board Certified Pediatric Dentist"
+    ]
+    [params.team.social]
+      linkedin = "https://linkedin.com/in/dr-emily-rodriguez"
+      email = "dr.rodriguez@stardentic.com"
+
+  # Testimonials
+  [[params.testimonials]]
+    name = "Jennifer Smith"
+    title = "Regular Patient"
+    content = "Outstanding dental care and professional service. The team really cares about your comfort and takes time to explain everything clearly."
+    image = "/images/testimonials/jennifer-smith.jpg"
+    rating = 5
+
+  [[params.testimonials]]
+    name = "Robert Davis"
+    title = "Cosmetic Patient"
+    content = "Dr. Johnson transformed my smile completely. The results exceeded my expectations and the process was comfortable throughout."
+    image = "/images/testimonials/robert-davis.jpg"
+    rating = 5
+
+  [[params.testimonials]]
+    name = "Maria Garcia"
+    title = "Family Patient"
+    content = "We trust StarDentic with our entire family. Dr. Rodriguez is amazing with our children, and the facility is top-notch."
+    image = "/images/testimonials/maria-garcia.jpg"
+    rating = 5
+
+  # FAQ
+  [[params.faqs]]
+    question = "What should I bring to my first dental appointment?"
+    answer = "Please bring a valid photo ID, dental insurance card, list of current medications, and any previous dental records or X-rays."
+
+  [[params.faqs]]
+    question = "Do you accept dental insurance?"
+    answer = "Yes, we accept most major dental insurance plans. Please contact our office to verify your specific coverage and benefits."
+
+  [[params.faqs]]
+    question = "How often should I visit the dentist?"
+    answer = "We recommend visiting every 6 months for routine cleanings and check-ups to maintain optimal oral health."
+
+  [[params.faqs]]
+    question = "Do you offer emergency dental services?"
+    answer = "Yes, we provide emergency dental care for urgent situations. Call our emergency line at +1-234-567-8911 for after-hours emergencies."
+
+  # Why Choose Us
+  [[params.why_choose]]
+    title = "Expert Dental Team"
+    description = "Board-certified dentists with years of specialized training and experience in all aspects of dental care."
+    icon = "fas fa-user-graduate"
+
+  [[params.why_choose]]
+    title = "Advanced Technology"
+    description = "State-of-the-art dental equipment and cutting-edge technology for precise diagnosis and treatment."
+    icon = "fas fa-microchip"
+
+  [[params.why_choose]]
+    title = "Comfortable Environment"
+    description = "Modern, relaxing office environment designed to make your dental visit as comfortable as possible."
+    icon = "fas fa-heart"
+
+  [[params.why_choose]]
+    title = "Emergency Care"
+    description = "Available for dental emergencies with same-day appointments and after-hours emergency services."
+    icon = "fas fa-clock"
+
+  # Special Offers
+  [[params.offers]]
+    title = "New Patient Special"
+    price = "$99"
+    description = "Comprehensive dental examination package for new patients."
+    features = [
+      "Complete Oral Examination",
+      "Digital X-rays",
+      "Oral Cancer Screening",
+      "Consultation with Dentist",
+      "Treatment Plan Discussion"
+    ]
+    url = "/contact?offer=new-patient"
+
+  [[params.offers]]
+    title = "Teeth Whitening Package"
+    price = "$299"
+    description = "Professional teeth whitening treatment for a brighter smile."
+    features = [
+      "Professional Whitening Treatment",
+      "Custom Whitening Trays",
+      "Take-home Whitening Kit",
+      "Follow-up Consultation",
+      "Touch-up Treatments"
+    ]
+    url = "/contact?offer=whitening-package"
+
+  # Insurance Plans
+  [[params.insurance_plans]]
+    name = "Delta Dental"
+    logo = "/images/insurance/delta-dental.png"
+
+  [[params.insurance_plans]]
+    name = "MetLife"
+    logo = "/images/insurance/metlife.png"
+
+  [[params.insurance_plans]]
+    name = "Cigna Dental"
+    logo = "/images/insurance/cigna.png"
+
+  [[params.insurance_plans]]
+    name = "Aetna Dental"
+    logo = "/images/insurance/aetna.png"
+
+  # Payment Options
+  payment_options = [
+    "Cash and Credit Cards",
+    "CareCredit Financing",
+    "Dental Savings Plans",
+    "Payment Plans Available",
+    "HSA and FSA Accepted"
+  ]
+
+  # Footer Services
+  [[params.footer_services]]
+    name = "General Dentistry"
+    url = "/services/general-dentistry"
+
+  [[params.footer_services]]
+    name = "Cosmetic Dentistry"
+    url = "/services/cosmetic-dentistry"
+
+  [[params.footer_services]]
+    name = "Orthodontics"
+    url = "/services/orthodontics"
+
+  [[params.footer_services]]
+    name = "Emergency Care"
+    url = "/services/emergency"
+
+  # Career Benefits
+  career_benefits = [
+    "Competitive Salary and Benefits",
+    "Professional Development Opportunities",
+    "Flexible Work Arrangements",
+    "Health and Dental Coverage",
+    "Retirement Planning",
+    "Continuing Education Support"
+  ]
+
+  # Contact FAQ
+  [[params.contact_faq]]
+    question = "How quickly will you respond to my appointment request?"
+    answer = "We typically respond to all appointment requests within 2 hours during business days. For urgent dental needs, please call our office directly."
+
+  [[params.contact_faq]]
+    question = "Can I schedule appointments online?"
+    answer = "Yes, you can request an appointment through our contact form, and our staff will call you to confirm the details and available appointment times."
+
+  # Services FAQ
+  [[params.services_faq]]
+    question = "Does dental treatment hurt?"
+    answer = "We use modern pain management techniques and local anesthesia to ensure your comfort during all procedures. Most patients experience little to no discomfort."
+
+  [[params.services_faq]]
+    question = "How long do dental procedures take?"
+    answer = "Treatment times vary depending on the procedure. Simple cleanings take about 60 minutes, while more complex treatments may require multiple appointments."
+
+  # Blog settings
+  featured_post = true
+
+# Menu Configuration
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+
+  [[menu.main]]
+    name = "Services"
+    url = "/services"
+    weight = 3
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 4
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 5
+
+# Taxonomies
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
+
+# Privacy Configuration
+[privacy]
+  [privacy.googleAnalytics]
+    disable = false
+    anonymizeIP = true
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]

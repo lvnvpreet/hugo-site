@@ -1,0 +1,76 @@
+<header class="main-header">
+    <!-- Top Header Bar -->
+    <div class="top-header-bar">
+        <div class="container">
+            <div class="top-header-content">
+                <div class="top-left">
+                    <a href="{{ "contact" | relURL }}#directions">How to Find Us</a>
+                    <span class="separator">|</span>
+                    <a href="{{ "contact" | relURL }}#feedback">Give Us Feedback</a>
+                </div>
+                <div class="top-center">
+                    <i class="fas fa-phone-alt"></i>
+                    <strong>Emergency: {{ .Site.Params.emergency_phone | default "+1-234-567-8900" }}</strong>
+                </div>
+                <div class="top-right">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email | default "info@example.com" }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="main-header-section">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="{{ .Site.BaseURL }}">
+                        {{ if .Site.Params.logo }}
+                            <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
+                        {{ else }}
+                            <h2>{{ .Site.Title }}</h2>
+                        {{ end }}
+                    </a>
+                </div>
+                
+                <nav class="main-navigation">
+                    {{ partial "navigation.html" . }}
+                </nav>
+                
+                <div class="header-search">
+                    <form class="search-form" action="{{ "search" | relURL }}" method="GET">
+                        <input type="search" placeholder="Search..." name="q">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Header Bar -->
+    <div class="contact-header-bar">
+        <div class="container">
+            <div class="contact-header-content">
+                <div class="contact-left">
+                    <i class="fas fa-phone"></i>
+                    <span>Call Us <a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone | default "+123-456-78-09" }}</a></span>
+                </div>
+                <div class="contact-center">
+                    <i class="fas fa-clock"></i>
+                    <span>{{ .Site.Params.hours | default "Mon-Sat: 9:00AM - 5:00PM, Sun: Closed" }}</span>
+                </div>
+                <div class="contact-right">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>{{ .Site.Params.address | default "12 Lake Street, New York, NY" }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
