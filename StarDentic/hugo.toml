@@ -1,4 +1,4 @@
-baseURL = "https://yourwebsite.com"
+baseURL = "https://stardentic.com"  # Update with your actual domain
 languageCode = "en-us"
 title = "StarDentic - Your Dental Care Partner"
 theme = "health-wellness-theme"
@@ -34,29 +34,28 @@ enableRobotsTXT = true
   favicon = "/images/favicon.ico"
   
   # SEO
-  keywords = ["dental care", "dentist", "oral health", "teeth cleaning", "dental clinic"]
-  author = "StarDentic Team"
+  keywords = ["dental care", "dentist", "oral health", "teeth cleaning", "dental clinic", "StarDentic"]
+  author = "StarDentic Dental Team"
   
-  # Hero Section
+  # Hero Section - Updated for dental focus
   [params.hero]
     title = "Your Smile is Our Priority"
     description = "Professional dental care services with compassionate treatment and cutting-edge technology. Experience personalized dental care designed for your unique needs."
-    cta = "Book Appointment"
+    cta = "Book Dental Appointment"
     background_image = "/images/hero-bg.jpg"
     show_video = false
-    video_url = ""
 
-  # About Section
+  # About Section - Updated for dental practice
   [params.about]
     title = "Excellence in Dental Care Since 2008"
-    description = "With over 15 years of experience, we provide exceptional dental services with a personal touch. Our state-of-the-art facility and experienced team ensure that you receive the best possible oral healthcare."
+    description = "With over 15 years of experience, we provide exceptional dental services with a personal touch. Our state-of-the-art dental facility and experienced team ensure that you receive the best possible oral healthcare."
     features = [
       "Board-Certified Dentists",
-      "State-of-the-art Equipment",
+      "State-of-the-art Dental Equipment",
       "Personalized Treatment Plans",
       "Emergency Dental Services",
-      "Insurance Accepted",
-      "Multilingual Staff"
+      "Dental Insurance Accepted",
+      "Multilingual Dental Staff"
     ]
   
   about_image = "/images/about-us.jpg"
@@ -69,24 +68,7 @@ enableRobotsTXT = true
     linkedin = "https://linkedin.com/company/stardentic"
     youtube = "https://youtube.com/stardentic"
 
-  # Services for Navigation Dropdown
-  [[params.service_menu]]
-    name = "General Dentistry"
-    url = "/services/general-dentistry"
-  
-  [[params.service_menu]]
-    name = "Cosmetic Dentistry"
-    url = "/services/cosmetic-dentistry"
-  
-  [[params.service_menu]]
-    name = "Orthodontics"
-    url = "/services/orthodontics"
-  
-  [[params.service_menu]]
-    name = "Oral Surgery"
-    url = "/services/oral-surgery"
-
-  # Home Page Services
+  # Updated Services for dental practice
   [[params.home_services]]
     title = "General Dentistry"
     description = "Comprehensive dental care including cleanings, fillings, and preventive treatments for optimal oral health."
@@ -111,81 +93,7 @@ enableRobotsTXT = true
     icon = "fas fa-align-center"
     url = "/services/orthodontics"
 
-  # Complete Services List
-  [[params.all_services]]
-    title = "General Dentistry"
-    description = "Comprehensive dental care including routine cleanings, fillings, crowns, and preventive treatments for all ages."
-    icon = "fas fa-tooth"
-    url = "/services/general-dentistry"
-    image = "/images/services/general-dentistry.jpg"
-    duration = "60 minutes"
-    price = "$120"
-    features = [
-      "Dental Cleaning and Polishing",
-      "Oral Examination",
-      "X-rays and Diagnosis",
-      "Cavity Treatment",
-      "Preventive Care Planning"
-    ]
-
-  [[params.all_services]]
-    title = "Cosmetic Dentistry"
-    description = "Enhance your smile with professional teeth whitening, veneers, bonding, and other aesthetic dental procedures."
-    icon = "fas fa-smile"
-    url = "/services/cosmetic-dentistry"
-    image = "/images/services/cosmetic-dentistry.jpg"
-    duration = "90 minutes"
-    price = "$300"
-    features = [
-      "Teeth Whitening",
-      "Porcelain Veneers",
-      "Dental Bonding",
-      "Smile Makeover",
-      "Gum Contouring"
-    ]
-
-  [[params.all_services]]
-    title = "Orthodontics"
-    description = "Straighten your teeth and correct bite issues with traditional braces, clear aligners, and other orthodontic treatments."
-    icon = "fas fa-align-center"
-    url = "/services/orthodontics"
-    image = "/images/services/orthodontics.jpg"
-    duration = "45 minutes"
-    price = "$200"
-    features = [
-      "Traditional Metal Braces",
-      "Clear Ceramic Braces",
-      "Invisalign Clear Aligners",
-      "Retainers",
-      "Bite Correction"
-    ]
-
-  # Service Categories
-  [[params.service_categories]]
-    name = "Preventive Care"
-    description = "Essential dental services for maintaining oral health"
-    icon = "fas fa-shield-alt"
-    services = [
-      "Regular Cleanings",
-      "Fluoride Treatments",
-      "Dental Sealants",
-      "Oral Cancer Screenings"
-    ]
-    url = "/services/preventive-care"
-
-  [[params.service_categories]]
-    name = "Restorative Care"
-    description = "Treatments to restore damaged or missing teeth"
-    icon = "fas fa-tools"
-    services = [
-      "Fillings and Crowns",
-      "Dental Implants",
-      "Bridges and Dentures",
-      "Root Canal Therapy"
-    ]
-    url = "/services/restorative-care"
-
-  # Team Members
+  # Updated Team Members for dental practice
   [[params.team]]
     name = "Dr. Sarah Johnson"
     designation = "Chief Dentist & Practice Owner"
@@ -228,7 +136,7 @@ enableRobotsTXT = true
       linkedin = "https://linkedin.com/in/dr-emily-rodriguez"
       email = "dr.rodriguez@stardentic.com"
 
-  # Testimonials
+  # Updated Testimonials
   [[params.testimonials]]
     name = "Jennifer Smith"
     title = "Regular Patient"
@@ -250,7 +158,7 @@ enableRobotsTXT = true
     image = "/images/testimonials/maria-garcia.jpg"
     rating = 5
 
-  # FAQ
+  # Updated FAQ for dental practice
   [[params.faqs]]
     question = "What should I bring to my first dental appointment?"
     answer = "Please bring a valid photo ID, dental insurance card, list of current medications, and any previous dental records or X-rays."
@@ -266,7 +174,6 @@ enableRobotsTXT = true
   [[params.faqs]]
     question = "Do you offer emergency dental services?"
     answer = "Yes, we provide emergency dental care for urgent situations. Call our emergency line at +1-234-567-8911 for after-hours emergencies."
-
   # Why Choose Us
   [[params.why_choose]]
     title = "Expert Dental Team"
